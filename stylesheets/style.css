@@ -1,0 +1,366 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/*
+* This project uses pattern files from http://subtlepatterns.com/.
+* Subtle Patterns by Subtle Patterns 
+* is licensed under a 
+* Creative Commons Attribution-ShareAlike 3.0 Unported License.
+* http://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+*
+* Many thanks to Atle Mo and the pattern designers.
+*/
+
+
+/* 
+* Awesome Entypo pictograms by Daniel Bruce — www.entypo.com
+* The Entypo pictograms are licensed under CC BY 3.0 and the font under SIL Open Font License.
+*/
+
+
+/* Table of Content
+==================================================
+	#Typography
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+
+/* #Typography / baseline corrections
+================================================== */
+
+h1 { line-height: 49px; margin-bottom: 14px; }
+h2 { line-height: 42px; margin-bottom: 7px; }
+h3 { line-height: 35px; margin-bottom: 7px; }
+h4 { line-height: 28px; margin-bottom: 7px; }
+h5 { line-height: 21px;  }
+
+p { margin: 0 0 21px 0; }
+p.lead { line-height: 28px; }
+
+blockquote, blockquote p { line-height: 21px; }
+blockquote { margin: 0 0 21px; padding: 7px 20px 0 19px; }
+
+hr { margin: 7px 0 14px; }
+ 
+ul, ol { margin-bottom: 21px;}
+ul ul, ul ol,
+ol ol, ol ul { margin: 7px 0 7px 30px; }
+ul ul li, ul ol li,
+ol ol li, ol ul li { margin-bottom: 7px; }
+li { line-height: 21px; margin-bottom: 14px; }
+
+.icon {
+	font-family: "WebSymbolsRegular";
+}
+
+
+/* #font-face
+================================================== */
+
+@font-face {
+	font-family: 'WebSymbolsRegular';
+	src: 	url("../fonts/websymbols/websymbols-regular-webfont.eot");
+	src: 	url("../fonts/websymbols/websymbols-regular-webfont.eot?#iefix") format('embedded-opentype'),	
+			url("../fonts/websymbols/websymbols-regular-webfont.woff") format('woff'),
+			url("../fonts/websymbols/websymbols-regular-webfont.ttf") format('truetype'),
+			url("../fonts/websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular") format('svg');						
+}
+
+
+@font-face {
+	font-family: 'Entypo';
+	src: 	url("../fonts/entypo/entypo.eot");
+	src: 	url("../fonts/entypo/entypo.eot?#iefix") format('embedded-opentype'),	
+			url("../fonts/entypo/entypo.woff") format('woff'),
+			url("../fonts/entypo/entypo.ttf") format('truetype'),
+			url("../fonts/entypo/entypo.svg#WebSymbolsRegular") format('svg');						
+}
+
+
+
+/* #Site Styles
+================================================== */
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #f4f4f4;
+}
+
+strong {
+	font-weight: 700;
+}
+
+/* ** =header ** */
+
+/* .sticky {
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+}
+*/
+
+.header {
+	position: relative;
+	/* background: url(../img/whitediamond_@2X.png) repeat 0 0;	*/
+	background: none;
+	z-index: 400;
+	width: 100%;
+	-webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);	
+}
+
+header.main {
+	padding: 7px 0;
+}
+
+header h1.logo {
+	margin: 7px 0 0 0;
+	float: left;
+}
+
+header nav {
+	float: right;
+	margin-top: 22px;
+}
+
+header nav ul li {
+	display: inline;
+	padding: 0 7px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+header nav ul li a {
+	color: #141414;
+	text-shadow: rgba(255,255,255,0.9) 1px 1px 3px;
+	text-decoration: none;
+	margin: 0px 7px 0 7px;
+	padding: 7px 21px 10px 21px;
+}
+
+header nav ul li.item a:hover,
+header nav ul li.item a:active,
+header nav ul li.item a.selected {
+	color: #141414;
+	border-bottom: 4px solid #990000;
+
+}
+
+header nav ul li.omega {
+	padding-right: 0px;
+}
+
+header nav a.omega {
+	margin-right: 0px;
+}
+
+header nav a.apply {
+	color: #fff;
+	text-shadow: none;
+	background: #04b2d9;
+	margin-right: 0px;
+	
+	-webkit-transition: background-color 0.18s ease-in-out;
+	-moz-transition: background-color 0.18s ease-in-out;
+	-o-transition: background-color 0.18s ease-in-out;
+	transition: background-color 0.18s ease-in-out;
+
+}
+
+header nav a.apply:hover {
+	background: #145f70;
+	border-bottom: 4px solid #fff;	
+}
+
+
+/* ** =hero section ** */
+
+.title {
+	position: relative;
+}
+
+.hero {
+	background: url(../img/hero.jpg) no-repeat;
+	
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	min-height: 500px;
+	
+	border-bottom: 1px solid #141414;
+}
+
+.hero .maintext {
+	margin: 7.5em 0 0 0;
+	
+	color: #fff;
+	line-height: 48px;
+	font-size: 48px;
+	font-weight: 800;
+	
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+.hero .subtext {
+	padding: 18px 0 0 0;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.hero .herocredit,
+.hero .herocredit a {
+	bottom: 2px;
+	padding: 28px 0 0 0;
+	color: #fff;
+	font-size: 10px;
+	font-weight: 400;
+	
+	text-decoration: none;
+}
+
+.hero .herocredit a {
+	font-weight: 600;
+}
+
+
+
+/* ** main page **/
+
+body.imprint {
+	position: relative;
+}
+
+#content {
+	background: #f4f4f4;
+}
+
+.singlepage {
+	padding-bottom: 12%;
+}
+
+
+h2.eheading {
+	font-size: 24px;
+	font-weight: 700;
+	color: #141414;
+	text-align: left;
+	padding: 4px 0 0 0;	
+}
+
+
+.section_w {
+	margin: 21px 0 0 0;
+	background: #fff;
+	border-top: 2px solid #000; 
+	border-bottom: 2px solid #000; 
+}
+
+
+/* ** =footer ** */
+
+.footer {
+	background: #141414;
+	color: #999;
+	border-top: #141414;
+}
+
+.primaryfooter {
+	padding-top: 21px;
+	margin-bottom: 14px;
+}
+
+.flogo {
+	margin-bottom: 14px;
+}
+
+.footer .ful {
+	margin-bottom: 21px;
+}
+
+.footer .cc {
+	text-align: right;
+}
+
+.footer h3 a {
+	margin: 0;
+	padding: 0;
+	width: 196px;
+	height: 26px;
+	display: block;
+	background: url(../img/logowhm_.png) 0 0 no-repeat;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+
+.footer li {
+	display: inline;
+	margin-right: 28px;
+}
+
+.footer li a,
+.footer .linked a {
+	color: #999;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.footer li a:hover,
+.footer li a:active,
+.footer li a:selected,
+.footer .linked a:hover,
+.footer .linked a:active,
+.footer .linked a:selected {
+	color: #fff;
+}
+
+.footer a:hover,
+.eml:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer .separator {
+	color: #999;
+}
+
+#push,
+#footer {
+	display: block;
+	height: 171px;
+}
+
+.twitterc {
+	font-size: 28px;
+}
+
+.twitterc:hover {
+	color: #00aced;
+}
+
+.secondaryfooter {
+	border-top: 1px solid #555;
+	padding-top: 7px;
+	padding-bottom: 14px;
+}
+
